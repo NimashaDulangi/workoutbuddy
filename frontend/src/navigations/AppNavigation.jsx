@@ -5,13 +5,12 @@ import MealPlansPage from "../pages/MealPlansPage";
 import PostsPage from "../pages/PostsPage";
 import WorkoutPlansPage from "../pages/WorkoutPlansPage";
 import WorkoutStatusPage from "../pages/WorkoutStatusPage";
-import Header from "../components/Shared/Header";
-import Footer from "../components/Shared/Footer";
+//new
 
 const AppNavigation = () => {
   return (
     <div className="h-dvh">
-      <Header />
+      
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -21,7 +20,7 @@ const AppNavigation = () => {
           <Route path="/workoutplans" element={<WorkoutPlansPage />} />
         </Routes>
       </Router>
-      <Footer />
+      
     </div>
   );
 };
